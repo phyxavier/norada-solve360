@@ -38,7 +38,7 @@ Create & Update
 
 		tag_vars = {categories: {add: ['tag-a', 'tag-b']}}
 
-		norada_api.update_contacts(member.last["id"], tag_vars)
+		norada_api.update_contacts(norada_contact_id, tag_vars)
 
 		norada_api.create_contacts_categories({:name => 'name'})
 
