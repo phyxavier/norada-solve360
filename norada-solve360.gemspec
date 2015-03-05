@@ -2,8 +2,8 @@
 require File.expand_path('../lib/nordara_solve_360/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Invokevoke Inc"]
-  gem.email         = ["bernard@invokevoke.com"]
+  gem.authors       = ["Bernard Otu"]
+  gem.email         = ["phyxavier@gmail.com"]
   gem.description   = %q{Library for accessing Norada Solve 360 REST API.}
   gem.summary       = %q{Library for accessing Norada Solve 360 REST API.}
 
