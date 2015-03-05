@@ -3,8 +3,6 @@ require 'json'
 require 'cgi'
 
 
-# TODO: Should put some documentation in here somewhere
-
 module NoradaSOLVE360
 
   class API
