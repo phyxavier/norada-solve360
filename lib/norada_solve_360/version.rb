@@ -1,3 +1,3 @@
-module noradaSolve360
+module NoradaSolve360
   VERSION = "1.0.6"
 end
