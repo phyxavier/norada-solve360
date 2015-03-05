@@ -1,15 +1,15 @@
 # Norada::Solve360
 
-gem 'norada_solve360', '~> 1.0.5'
+gem 'norada_solve_360', '~> 1.0.0'
 
-TODO: Write a gem description
+Gem Library for accessing Norada Solve 360 REST API.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'norada_solve360'
+gem 'norada_solve_360'
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install norada_solve360
+    $ gem install norada_solve_360
 
 ## Usage
 
