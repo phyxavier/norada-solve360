@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/nordara_solve_360/version', __FILE__)
+require File.expand_path('../lib/norada_solve_360/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Bernard Otu"]
@@ -10,9 +10,9 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.name          = "nordara_solve_360"
+  gem.name          = "norada_solve360"
   gem.require_paths = ["lib"]
-  gem.version       = NordaraSolve360::VERSION
+  gem.version       = NoradaSolve360::VERSION
   gem.add_dependency("json")
   gem.add_dependency("rest-client")
   gem.add_development_dependency "bundler", "~> 1.7"

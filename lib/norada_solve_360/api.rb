@@ -5,7 +5,7 @@ require 'cgi'
 
 # TODO: Should put some documentation in here somewhere
 
-module noradaSOLVE360
+module NoradaSOLVE360
 
   class API
 
