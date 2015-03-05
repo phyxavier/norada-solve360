@@ -6,12 +6,12 @@ require 'cgi'
 # TODO: Should put some documentation in here somewhere
 
 module NordaraSOLVE360
-
+  
   class API
 
     attr_accessor :user_api_token, :user_email,  :norada_solve_url
 
-
+  
     def initialize(user_api_token, user_email)
       @norada_solve_url = 'https://secure.solve360.com/'
       @user_api_token    = user_api_token
@@ -28,7 +28,7 @@ module NordaraSOLVE360
       elsif method_name.to_s =~ /^delete_(.+)$/
         delete_method($1, *args)
       else
-	      super
+	      super 
 	    end
     end
 
@@ -74,8 +74,8 @@ module NordaraSOLVE360
 
       murl += "/#{arg}"
       arg = args[1]
-
-      call(:put, murl, arg)
+      
+      call(:put, murl, arg)    
     end
 
     def create_method(method_name, *args)
@@ -84,8 +84,8 @@ module NordaraSOLVE360
       arg = args[0]
 
       raise "Argument must be a hash" if (!arg.is_a? Hash)
-
-      call(:post, murl, arg)
+      
+      call(:post, murl, arg)    
     end
 
 
@@ -98,8 +98,8 @@ module NordaraSOLVE360
 
       murl += "/#{arg}"
       arg = args[1]
-
-      call(:delete, murl, arg)
+      
+      call(:delete, murl, arg)    
     end
 
     def find_method(method_name, *args)
@@ -116,9 +116,9 @@ module NordaraSOLVE360
       else
       	murl += "/#{arg}"
       end
-
+			
 			arg = args[1]
-
+      
       call(:get, murl, arg)
     end
 
@@ -126,6 +126,6 @@ module NordaraSOLVE360
 
   end
 
-
-
+  
+  
 end

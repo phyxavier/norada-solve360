@@ -1,31 +1,25 @@
-# Norada::Solve360
+#Deployment Notes
 
-TODO: Write a gem description
+Connect to Norada 360 Gem.
 
-## Installation
+Prototype: Not gemified yet.
+		
+So Rails users; you can add it your vendor folder and then add this line to your gem file:
 
-Add this line to your application's Gemfile:
+		gem 'nordara_solve_360', path: 'vendor/nordara_solve_360'
 
-```ruby
-gem 'norada-solve360'
-```
+		CONNECT TO NORADA
 
-And then execute:
+    norada_api = NordaraSOLVE360::API.new(norada_service.api_key, norada_service.username)
+   
 
-    $ bundle
+    FIND
+    members = norada_api.find_contacts(:all, {:layout => 1, :limit => limit_contact["count"], :filtermode => 'category', :filtervalue => category["id"]})
+    norada_api.find_contacts_categories(:all)
+    norada_api.find_contacts(norada_contact_id)
 
-Or install it yourself as:
-
-    $ gem install norada-solve360
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/norada-solve360/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+    CREATE & UPDATE
+    tag_vars = {categories: {add: add_tag_arr}}
+    norada_api.update_contacts(member.last["id"], tag_vars)
+ 		
+ 		norada_api.create_contacts_categories({:name => nvt})
