@@ -28,7 +28,7 @@ Connect to Norada
 
 Finders
 
-		members = norada_api.find_contacts(:all, {:layout => 1, :limit => "#{count}", :filtermode => 'category', :filtervalue => category["id"]})
+		members = norada_api.find_contacts(:all, {:layout => 1, :limit => "#{count}", :filtermode => 'category', :filtervalue => norada_category_id })
 
 		norada_api.find_contacts_categories(:all)
 
