@@ -15,4 +15,6 @@ Gem::Specification.new do |gem|
   gem.version       = NordaraSolve360::VERSION
   gem.add_dependency("json")
   gem.add_dependency("rest-client")
+  gem.add_development_dependency "bundler", "~> 1.7"
+  gem.add_development_dependency "rake", "~> 10.0"
 end
