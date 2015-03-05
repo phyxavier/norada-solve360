@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Norada::Solve360::VERSION
   spec.authors       = ["Bernard Otu"]
   spec.email         = ["phyxavier@gmail.com"]
-  spec.summary       = %q{Library for accessing Norada Solve 360 REST API.}
+  spec.summary       = %q{Gem Library for accessing Norada Solve 360 REST API.}
   spec.description   = %q{Library for accessing Norada Solve 360 REST API.}
   spec.homepage      = ""
   spec.license       = "MIT"
