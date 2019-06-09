@@ -16,5 +16,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency("json")
   gem.add_dependency("rest-client")
   gem.add_development_dependency "bundler", "~> 1.7"
-  gem.add_development_dependency "rake", "~> 10.0"
+  gem.add_development_dependency "rake", "~> 12.3"
 end
