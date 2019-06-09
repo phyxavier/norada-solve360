@@ -15,6 +15,6 @@ Gem::Specification.new do |gem|
   gem.version       = NoradaSolve360::VERSION
   gem.add_dependency("json")
   gem.add_dependency("rest-client")
-  gem.add_development_dependency "bundler", "~> 1.7"
+  gem.add_development_dependency "bundler", "~> 2.0"
   gem.add_development_dependency "rake", "~> 12.3"
 end
